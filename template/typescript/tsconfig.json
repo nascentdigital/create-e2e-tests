@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "*": [
+                "./*"
+            ],
+            "src/*": [
+                "./src/*"
+            ],
+            "test/*": [
+                "./test/*"
+            ]
+        },
+        "types": [
+            "@wdio/sync",
+            "@wdio/mocha-framework",
+            "node"
+        ],
+
+        "target": "es2017",
+        "module": "commonjs",
+
+        "strict": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "isolatedModules": false,
+        "declaration": true,
+        "downlevelIteration": true
+    }
+}

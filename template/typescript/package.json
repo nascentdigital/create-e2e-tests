@@ -1,0 +1,33 @@
+{
+    "name": "{{name}}",
+    "version": "1.0.0",
+    "description": "{{description}}",
+    "author": "{{author}}",
+    "license": "{{license}}",
+    "repository": "{{repo}}",
+    "scripts": {
+        "test": "wdio config/qa.js",
+        "test:local": "wdio config/local.js",
+        "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'"
+    },
+    "devDependencies": {
+        "@nascentdigital/e2e-wdio": "^0.1.1",
+        "@types/chai": "^4.2.5",
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^12.12.14",
+        "@wdio/cli": "^5.16.10",
+        "@wdio/local-runner": "^5.16.10",
+        "@wdio/mocha-framework": "^5.16.10",
+        "@wdio/selenium-standalone-service": "^5.16.10",
+        "@wdio/spec-reporter": "^5.16.5",
+        "@wdio/sync": "^5.16.10",
+        "chai": "^4.2.0",
+        "deepmerge": "^4.2.2",
+        "mocha": "^6.2.2",
+        "ts-node": "^8.5.4",
+        "tsconfig-paths": "^3.9.0",
+        "tslint": "^5.20.1",
+        "typescript": "^3.7.2",
+        "webdriverio": "^5.16.10"
+    }
+}

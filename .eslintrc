@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "standard"
+    ],
+    "rules": {
+        "brace-style": ["error", "stroustrup"],
+        "indent": ["error", 4],
+        "no-multiple-empty-lines": ["error", {"max":  2}],
+        "object-curly-spacing": ["error", "never"],
+        "padded-blocks": ["off"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"]
+    }
+}
