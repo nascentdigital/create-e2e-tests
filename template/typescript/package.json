@@ -6,8 +6,8 @@
     "license": "{{license}}",
     "repository": "{{repo}}",
     "scripts": {
-        "test": "wdio config/qa.js",
-        "test:local": "wdio config/local.js",
+        "test": "wdio config/local.js",
+        "test:remote": "wdio config/browserstack.js",
         "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'"
     },
     "devDependencies": {

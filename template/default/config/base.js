@@ -35,9 +35,7 @@ exports.config = {
     framework: "mocha",
     mochaOpts: {
         ui: "bdd",
-        require: [
-            "tsconfig-paths/register"
-        ],
+        require: [],
         timeout: process.env.DEBUG ? 99999999 : 30000
     },
 
@@ -48,7 +46,6 @@ exports.config = {
 
     // lifecycle hooks
     before: function (capabilities, specs) {
-        require("ts-node").register({files: true});
         require("@nascentdigital/e2e-wdio").NascentExtensions.register();
     },
     afterTest: function (test) {
