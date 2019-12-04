@@ -1,5 +1,5 @@
 // imports
-const {Style} = require("@nascentdigital/e2e-wdio");
+const {Style} = require("@nascentdigital/wdio-extend");
 
 
 // style definition

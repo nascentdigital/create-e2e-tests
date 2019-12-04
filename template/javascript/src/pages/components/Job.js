@@ -1,5 +1,5 @@
 // imports
-const {Component, Layout} = require("@nascentdigital/e2e-wdio");
+const {Component, Layout} = require("@nascentdigital/wdio-extend");
 const {BodyCopy, TitleSans} = require("../../styles");
 
 

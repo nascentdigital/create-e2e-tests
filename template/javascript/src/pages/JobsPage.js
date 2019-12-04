@@ -1,5 +1,5 @@
 // imports
-const {Page} = require("@nascentdigital/e2e-wdio");
+const {Page} = require("@nascentdigital/wdio-extend");
 const {JobList} = require("./components/JobList");
 
 
