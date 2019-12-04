@@ -11,7 +11,7 @@
         "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts'"
     },
     "devDependencies": {
-        "@nascentdigital/e2e-wdio": "^0.1.1",
+        "@nascentdigital/wdio-extend": "^1.0.0",
         "@types/chai": "^4.2.5",
         "@types/mocha": "^5.2.7",
         "@types/node": "^12.12.14",

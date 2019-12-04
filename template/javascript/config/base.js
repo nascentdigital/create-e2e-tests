@@ -46,7 +46,7 @@ exports.config = {
 
     // lifecycle hooks
     before: function (capabilities, specs) {
-        require("@nascentdigital/e2e-wdio").NascentExtensions.register();
+        require("@nascentdigital/wdio-extend").NascentExtensions.register();
     },
     afterTest: function (test) {
         if (test.error !== undefined) {
