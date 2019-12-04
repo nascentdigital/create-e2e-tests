@@ -2,7 +2,7 @@
     "private": false,
     "reveal": true,
     "name": "@nascentdigital/create-e2e-tests",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "CLI for easily bootstrapping modern E2E tests.",
     "repository": "git@github.com:nascentdigital/nascent-create-e2e-tests.git",
     "author": "Simeon de Dios <simeon@nascentdigital.com>",
