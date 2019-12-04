@@ -4,7 +4,7 @@
     "name": "@nascentdigital/create-e2e-tests",
     "version": "1.0.1",
     "description": "CLI for easily bootstrapping modern E2E tests.",
-    "repository": "git@github.com:nascentdigital/nascent-create-e2e-tests.git",
+    "repository": "git@github.com:nascentdigital/create-e2e-tests.git",
     "author": "Simeon de Dios <simeon@nascentdigital.com>",
     "main": "index.js",
     "license": "MIT",
