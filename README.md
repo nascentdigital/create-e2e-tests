@@ -7,12 +7,13 @@
 
 - Easy-to-use CLI
 - Uses [WebdriverIO](https://webdriver.io/) for flexible and extensible testing
+- Extends WebdriverIO using the Nascent [wdio-extend](https://github.com/nascentdigital/wdio-extend) package
 - Optional support for TypeScript
 
 
 ## Install globally
 
-This package should be used with `node >= 8`.
+This package should be used with `node >= 10`.
 
 ```bash
 npm install -g @nascentdigital/create-e2e-tests
@@ -24,9 +25,6 @@ npm install -g @nascentdigital/create-e2e-tests
 npx @nascentdigital/create-e2e-tests
 ```
 
-_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and 
-higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
-
 
 ## Creating a New Project
 
@@ -36,7 +34,7 @@ create-e2e-tests
 
 Answer some basic prompts about your E2E test project, and then the CLI will perform the following steps:
 - copy over the template
-- install dependencies via yarn or npm
+- install dependencies via `yarn` or `npm`
 - initialize local git repo
 
 

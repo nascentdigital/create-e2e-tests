@@ -15,8 +15,8 @@
         "test": "ava -v *.test.js lib/*.test.js && standard *.js lib/*.js"
     },
     "engines": {
-        "node": ">=8",
-        "npm": ">=5"
+        "node": ">=10",
+        "npm": ">=6"
     },
     "keywords": [
         "e2e",
