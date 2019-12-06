@@ -1,16 +1,13 @@
 // imports
-import {expect} from "chai";
-import {Component, Page} from "@nascentdigital/wdio-extend";
-import {Menubar, MenubarLinkName, MenubarLinkNames} from "./Menubar";
+const {expect} = require("chai");
+const {Component} = require("@nascentdigital/wdio-extend");
+const {Menubar, MenubarLinkNames} = require("./Menubar");
 
 
 // component definition
-export class Header extends Component {
+class Header extends Component {
 
-    private readonly _page: Page;
-
-
-    public static test(page: Page, activeLink?: MenubarLinkName): void {
+    static test(page, activeLink) {
 
         // create header
         const header = new Header(page);
@@ -19,7 +16,7 @@ export class Header extends Component {
         header.test(activeLink);
     }
 
-    private constructor(page: Page) {
+    constructor(page) {
 
         // call base constructor
         super(page, `header[data-component="Header"]`, "Header");
@@ -28,15 +25,15 @@ export class Header extends Component {
         this._page = page;
     }
 
-    public get staticMenubar() {
+    get staticMenubar() {
         return new Menubar(this, "StaticMenubar");
     }
 
-    public get floatingMenubar() {
+    get floatingMenubar() {
         return new Menubar(this, "FloatingMenubar");
     }
 
-    private test(activeLink?: MenubarLinkName) {
+    test(activeLink) {
 
         describe("Header", () => {
 
@@ -94,3 +91,7 @@ export class Header extends Component {
         });
     }
 }
+
+
+// exports
+exports.Header = Header;

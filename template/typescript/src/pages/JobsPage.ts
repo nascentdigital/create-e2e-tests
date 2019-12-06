@@ -1,5 +1,5 @@
 // imports
-import {Page, PageParams} from "@nascentdigital/e2e-wdio";
+import {Page, PageParams} from "@nascentdigital/wdio-extend";
 import {JobList} from "./components";
 
 

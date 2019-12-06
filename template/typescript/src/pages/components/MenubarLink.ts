@@ -1,5 +1,5 @@
 // imports
-import {Component} from "@nascentdigital/e2e-wdio";
+import {Component} from "@nascentdigital/wdio-extend";
 
 
 // class definition

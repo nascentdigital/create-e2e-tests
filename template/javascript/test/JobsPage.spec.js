@@ -1,10 +1,13 @@
 // imports
 const {expect} = require("chai");
-const {jobsPage} = require("../src/pages");
+const {Header, jobsPage} = require("../src/pages");
 
 
 // tests
 describe("Jobs Page", () => {
+
+    // Header tests
+    Header.test(jobsPage, "careersLink");
 
     // Job List tests
     describe("Job List Component", () => {

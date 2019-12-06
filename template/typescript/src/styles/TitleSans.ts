@@ -1,5 +1,5 @@
 // imports
-import {Style} from "@nascentdigital/e2e-wdio";
+import {Style} from "@nascentdigital/wdio-extend";
 
 
 // style definition

@@ -1,5 +1,5 @@
 // imports
-import {Component, Container} from "@nascentdigital/e2e-wdio";
+import {Component, Container} from "@nascentdigital/wdio-extend";
 import {Job} from "./Job";
 
 

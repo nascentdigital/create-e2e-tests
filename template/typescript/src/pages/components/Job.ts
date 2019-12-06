@@ -1,5 +1,5 @@
 // imports
-import {Component, Container, Layout} from "@nascentdigital/e2e-wdio";
+import {Component, Container, Layout} from "@nascentdigital/wdio-extend";
 import {BodyCopy, TitleSans} from "styles";
 
 

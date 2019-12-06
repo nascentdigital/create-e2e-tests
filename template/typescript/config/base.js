@@ -49,7 +49,7 @@ exports.config = {
     // lifecycle hooks
     before: function (capabilities, specs) {
         require("ts-node").register({files: true});
-        require("@nascentdigital/e2e-wdio").NascentExtensions.register();
+        require("@nascentdigital/wdio-extend").NascentExtensions.register();
     },
     afterTest: function (test) {
         if (test.error !== undefined) {

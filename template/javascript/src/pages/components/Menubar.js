@@ -1,41 +1,37 @@
 // imports
-import {Component, Container, Layout} from "@nascentdigital/wdio-extend";
-import {MenubarLink} from "./MenubarLink";
+const {Component, Layout} = require("@nascentdigital/wdio-extend");
+const {MenubarLink} = require("./MenubarLink");
 
 
 // constants
-export const MenubarLinkNames: MenubarLinkName[] = ["processLink", "workLink", "careersLink"];
-
-
-// types + interfaces
-export type MenubarLinkName = "processLink" | "workLink" | "careersLink";
+const MenubarLinkNames = ["processLink", "workLink", "careersLink"];
 
 
 // class definition
-export class Menubar extends Component {
+class Menubar extends Component {
 
-    constructor(parent: Container, name: string) {
+    constructor(parent, name) {
         super(parent, `*[data-component="${name}"]`, name);
     }
 
 
-    public get processLink() {
+    get processLink() {
         return new MenubarLink(this, "processLink");
     }
 
-    public get workLink() {
+    get workLink() {
         return new MenubarLink(this, "workLink");
     }
 
-    public get careersLink() {
+    get careersLink() {
         return new MenubarLink(this, "careersLink");
     }
 
-    public get button() {
+    get button() {
         return new Component(this, `*[data-name="button"]`, "button");
     }
 
-    protected declareLayout(): Layout | null {
+    declareLayout() {
         return Layout
             .xs()
             .sm()
@@ -44,3 +40,8 @@ export class Menubar extends Component {
             .done();
     }
 }
+
+
+// exports
+exports.MenubarLinkNames = MenubarLinkNames;
+exports.Menubar = Menubar;
