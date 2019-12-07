@@ -26,7 +26,8 @@
         "component",
         "typescript",
         "javascript",
-        "template"
+        "template",
+        "build-tools"
     ],
     "dependencies": {
         "chalk": "^2.4.2",
